@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Dashboard</title>
+<link rel="stylesheet" href="user_dashboard_style.css">
+</head>
+
+<body>
+
+<nav>
+<button class="buttons"><a href="home_user.html">🏠 Home</a></button>
+<button class="buttons"><a href="user_dashboard.html">📋 Dashboard</a></button> 
+<button class="buttons"><a href="borrowed_books.html">🤝🏻 Borrowed Books</a> </button>
+<button class="buttons"><a href="login.html" > ➤ Logout</a></button>
+<button class="buttons"><a href="admin.html" > 👨🏻‍💼 Admin </a></button>
+</nav>
+
+<div class="usercontainer">
+    <div class="topinfo">
+        <h1 class="shadow">User Dashboard</h1>
+        <h2 class="shadow">Search Books</h2>
+        <div class="searchcontainer">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Search books by title, author, or category..." id="searchInput">
+        <button onclick="searchBooks()">Search</button>
+            <select class="categorydropdown" id="filterType">
+                <option value="title">Title</option>
+                <option value="category">Category</option>
+                <option value="author">Author</option>
+            </select>
+        </div>
+        
+        
+        <h2 class="shadow">Books</h2>
+    </div>
+    
+<div id="books"> 
+    <div class="book1">
+        <a class="imghover" href="clean.html"> <img src="clean.png" alt="clean" title="clean code"></a>
+        <div class="bookinfo">
+            <h3 class="title">Clean Code</h3>
+            <p class="author">Author: Robert Martin</p>
+            <p class="category">Category: Programming</p>
+            <p class="status">Status: Available</p>
+            <a class="btn" href="clean.html">👀 View Details</a> <a class="btn borrow-btn" >🤝🏻 Borrow Book</a>  
+        </div>
+    </div>
+    <div class="book2">
+        <a class="imghover" href="harry.html"><img src="harry.png" alt="Harry" title="Details"></a>
+        <div class="bookinfo">
+            <h3 class="title">Harry Potter</h3>
+            <p class="author">Author: J.K Rowling</p>
+            <p class="category">Category: Fantasy</p>
+            <p class="status">Status: Available</p>
+            <a class="btn" href="harry.html">👀 View Details</a> <a class="btn borrow-btn" >🤝🏻 Borrow Book</a>  
+        </div>
+    </div>
+    <div class="book3">
+        <a class="imghover" href="atomic.html"><img src="atomic.png" alt="Atomic habits" title="Atomic habits"></a>
+        <div class="bookinfo" >
+            <h3 class="title">Atomic Habits</h3>
+            <p class="author">Author: James Clear</p>
+            <p class="category">Category: Self Development</p>
+            <p class="status">Status: Available</p>
+            <a class="btn" href="atomic.html">👀 View Details</a> <a class="btn borrow-btn" >🤝🏻 Borrow Book</a>    
+        </div>
+    </div>
+</div>
+<script src="Script.js" ></script>
+<script src="user_dashboard.js" ></script>
+</body>
+</html>

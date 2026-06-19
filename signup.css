@@ -1,0 +1,108 @@
+body {
+  background-image: url("login.jpeg");
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+  margin: 0;  
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.container {
+  width: 400px;
+  padding: 40px;
+  background: rgba(15, 15, 15, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(200, 169, 106, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+
+.form-group {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 600; 
+  color: #c8a96a;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 210px;  
+  background: rgba(255, 255, 255,0.05); 
+  border: 1px solid rgba(200, 169, 106, 0.4);
+  border-radius: 6px;
+  color: white;
+  padding: 10px;
+ transition: 0.3s;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;  
+  justify-content: center;  
+  gap: 10px; 
+  margin: 20px 0;
+  font-size: 0.9rem;
+  color: #c8a96a;
+}
+
+.radio-group label {
+  margin-right: 10px; 
+  color: #c8a96a;
+}
+
+.radio-group input[type="radio"] {
+  cursor: pointer;
+  accent-color: #c8a96a; 
+}
+
+button {
+  cursor: pointer;
+  transition:  0.3s ;
+  border: none;
+}
+
+.button-signup {
+  width: 100%;
+  background: linear-gradient(45deg, #c8a96a, #a07c3b);  
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.bt-login {
+  background: none;
+  border: 1px solid #c8a96a;
+  padding: 6px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.bt-login a {
+  text-decoration: none; 
+  color: #c8a96a;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+  box-shadow: 0 5px 15px rgba(200, 169, 106, 0.3);
+}
+
+p {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #ccc;
+}

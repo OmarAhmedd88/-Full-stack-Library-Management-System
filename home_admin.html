@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="homeadmin.css">
+    
+</head>
+<body> 
+   <nav>
+    <button><a href="home_admin.html">🏠 Home</a></button> 
+    <button><a href="admin_dash.html">📋 Dashboard</a> </button>
+    <button><a href="add_book.html">➕ Add book</a> </button>
+    <button><a href="edit_book.html">✍️ Edit book</a> </button>
+    <button><a href="delete_book.html">🗑️Delete Book</a></button>
+    <div align="right"> <button><a href="login.html">👤 user</a></button> 
+       <button> <a href="login.html">➤logout</a></button></div>
+    </nav>
+    <h1 class="shadow">Welcome Admin</h1>
+
+    <a class="btn" href="admin_dash.html">Manage Books</a><br><br>
+    <table border="2">
+       <th>Total Books</th>
+       <th>Available</th>
+       <th>Borrowed</th>
+       <th>Users</th>
+       <tr>
+       <td id="total_cell"><p>3</p></td>
+       <td id="Available_cell"><p>2</p></td>
+       <td id="Borrow_cell"><p>1</p></td>
+       <td id="User_cell"><p>3</p></td>
+    </tr>
+
+    </table>
+
+ <script src="Script.js" defer></script>
+
+</body>
+</html>

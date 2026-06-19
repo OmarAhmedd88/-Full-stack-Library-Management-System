@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="UTF-8"/>
+     <title>Admin Dashboard</title>
+      <link rel="stylesheet" href="admin_dash.css">
+    </head>
+    <body>
+
+ <nav>
+    <button><a href="home_admin.html">🏠 Home</a></button> 
+    <button><a href="admin_dash.html">📋 Dashboard</a> </button>
+    <button><a href="add_book.html">➕ Add book</a> </button>
+    <button><a href="edit_book.html">✍️ Edit book</a> </button>
+    <button><a href="delete_book.html">🗑️Delete Book</a></button>
+    <div align="right"> <button><a href="login.html">👤 user</a></button> 
+       <button> <a href="login.html">➤logout</a></button></div>
+    </nav>
+
+     <div class="admincontainer">
+        <br>
+         
+         <h1 class="shadow">Manage books</h1>
+         <p class="shadow" id="stats_line"> Total Books : <span id="stat_total">0</span> | Available : <span id="stat_avail">0</span> | Borrowed : <span id="stat_borrow">0</span> | Registered Users : <span id="stat_users">0</span></p>
+         <div class="searchcontainer">
+             <input type="text" name="" class="searchInput" placeholder="search by title,Author or ID">
+             <select class="categorydropdown">
+                 <option value="">All category</option>
+                 <option value="Romance">Romance</option>
+                 <option value="Drame">Drama</option>
+                 <option value="antasy">Fantasy</option>
+                 <option value="Historical">Hisorical</option>
+                 <option value="Horror">Horror</option>
+                 <option value="Sci-Fi">Sci-Fi</option>
+                </select>
+                <select class="statusdropdown">
+                    <option value="">All Status</option>
+                    <option value="Available">Available</option>
+                    <option value="Unavailable">Unavailable</option>
+                    <option value="Borrowed">Borrowed</option>
+                </select>
+            
+        </div>
+        <p class="shadow">Showing 2 out of 2 Books</p>
+<p class="shadow"><strong>Books Available</strong></p>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Book Title</th>
+      <th>Author</th>
+      <th>Category</th>
+    
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="admin_book">
+  </tbody>
+</table>
+        <br>
+        <div><a class="btn" href="add_book.html">➕ Add book</a>
+            <a class="btn" href="edit_book.html">✍️ Edit book</a>  </div>
+            
+        </div>
+        <!-- <script src="Script.js "></script> -->
+        <script src="admin_dash.js"></script>
+    </body>
+
+</html>

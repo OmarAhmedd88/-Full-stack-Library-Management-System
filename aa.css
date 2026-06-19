@@ -1,0 +1,166 @@
+/* 1. Global Setup */
+body {
+    background-image: url("library.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps bg still when scrolling */
+    margin: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Coordinated Navigation Bar */
+.navbar {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(200, 169, 106, 0.3);
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-item, .logout-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #c8a96a; /* Gold hover */
+}
+
+.logout-btn {
+    background: rgba(200, 169, 106, 0.15);
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #c8a96a;
+}
+
+/* 3. The Glass Content Container */
+.content-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(200, 169, 106, 0.2);
+}
+
+h1, h2, h3 {
+    color: #c8a96a; /* Gold Headings */
+    margin-bottom: 20px;
+}
+
+/* 4. Search Bar Styling */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgba(200, 169, 106, 0.3);
+}
+
+.search-bar input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 12px;
+    color: white;
+    outline: none;
+}
+
+.search-btn {
+    background: #c8a96a;
+    border: none;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 5. Book Grid / Cards */
+.book-list {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.book-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    border-color: #c8a96a;
+}
+
+.book-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.book-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.book-info h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.book-info p {
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+/* 6. Borrow Section & Info Cards */
+.info-card {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    border-left: 4px solid #c8a96a;
+}
+
+.borrow-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mini-img {
+    width: 40px;
+    border-radius: 4px;
+}
+
+/* 7. Footer / About Button */
+.footer-links {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.about-btn {
+    text-decoration: none;
+    color: #1a1a1a;
+    background: linear-gradient(to right, #c8a96a, #a07c3b);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+}

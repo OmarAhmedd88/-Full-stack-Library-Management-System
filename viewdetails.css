@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.236), rgba(0, 0, 0, 0.6)),url(wallpaper1.png);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.shadow{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin-left: 10px;
+}
+
+nav {
+    height: 60px;
+    background-color: black; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+nav button {
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 8px 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ;
+    margin-right: 6px;
+}
+
+nav button:hover {
+    transform: scale(1.1);
+    border: 2px solid black;
+    background-color: #c8a96a;
+}
+
+nav button a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+nav p {
+    margin: 0;
+    display: flex;
+    align-items: left;
+    gap: 1px;
+}
+img {
+    width: 257px;
+    height: 374px;
+    border-radius: 10px;
+    margin-left: 725px;
+}
+
+.viewcontainer{
+    margin-left: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.236), rgba(0, 0, 0, 0.6));
+}
+.bookinfo{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn {
+    margin-top: 10px;
+    background-color: rgb(0, 35, 116);
+    padding: 12px 28px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    border: transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: rgb(154, 184, 210);
+    color: #222;
+    transform: scale(1.05);
+    border: transparent;
+    border-radius: 10px;
+}

@@ -1,0 +1,144 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+ 
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.236), rgba(0, 0, 0, 0.6)), url(adminwallpaper.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+ 
+    a {
+      text-decoration: none;
+    }
+ 
+    nav {
+      height: 60px;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+ 
+    nav button {
+      background-color: transparent;
+      border: 2px solid rgb(0, 0, 0);
+      padding: 8px 20px;
+      color: white;
+      transition: all 0.3s;
+      margin-right: 6px;
+    }
+ 
+    nav button:hover {
+      transform: scale(1.1);
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: #c8a96a;
+    }
+ 
+    nav button a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    }
+ 
+    nav .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 1px;
+    }
+ 
+    nav .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1px;
+    }
+ 
+    h1 {
+      font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+      margin: 24px 0 8px 40px;
+      font-size: 28px;
+    }
+ 
+    p {
+      margin-left: 40px;
+      margin-bottom: 10px;
+      font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+      font-size: 14px;
+    }
+ 
+    .container_edit {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+      border-radius: 30px;
+      padding: 35px 40px;
+      margin: 20px 40px;
+      box-shadow: 30px 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+    }
+ 
+    .container_edit span {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      font-weight: bold;
+      color: #ffffff;
+      gap: 6px;
+    }
+ 
+    .container_edit input[type="text"] {
+      border: none;
+      border-bottom: 1.5px solid rgb(177, 168, 168);
+      padding: 8px 6px;
+      font-size: 14px;
+      font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+      background: transparent;
+      outline: none;
+      width: 100%;
+      color: white;
+      transition: border-color 0.3s ease;
+    }
+ 
+    .container_edit input[type="text"]:focus {
+      border-bottom: 2px solid #c8a96a;
+    }
+ 
+    .container_edit :placeholder-shown {
+      color: white;
+    }
+ 
+    .add_btn {
+      margin-top: 10px;
+      background-color: rgb(0, 35, 116);
+      padding: 12px 28px;
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+      font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+      border: transparent;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      cursor: pointer;
+    }
+ 
+    .add_btn:hover {
+      background-color: rgb(200, 80, 80);
+      color: #fff;
+      transform: scale(1.05);
+      border-radius: 10px;
+    }
+ 
+    hr {
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      margin: 0 40px;
+    }

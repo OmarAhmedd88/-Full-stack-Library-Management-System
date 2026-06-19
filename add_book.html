@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ADD BOOK</title>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="add.css"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav>
+  
+<button><a href="home_admin.html">🏠 Home</a></button>
+<button><a href="admin_dash.html">📋 Dashboard</a></button> 
+    <button><a href="add_book.html">➕ Add book</a> </button>
+    <button><a href="edit_book.html">✍️ Edit book</a> </button>    
+<button><a href="delete_book.html">🗑️ Delete Book</a></button>
+
+
+<p align = "right"><button><a href="admin.html" > ➤ Logout</a></button>
+<button><a href="login.html" > 👤 user </a>
+</button>
+</p>
+</nav>
+
+   <div class="hh">
+    <h1>Add New Book</h1>
+
+    <p>Fill in the details to add a new book to the library</p> <br>
+  
+  </div>
+    
+    <div class="container_add" >
+
+  <span>Book ID <input type="text" id="ID_Add" placeholder="e.g B006"></span>  <br><br>
+  <span>Book Name <input type="text" id="Title_Add" placeholder="Enter book name"></span>  <br><br>
+  <span>Author <input type="text" id="Author_Add" placeholder="Enter author name"></span>  <br><br>
+  <span>Category  <select id = "Sel_Cate" name="category" required>
+        <option>Select Category</option>
+        <option value="Programming">Programming</option>
+        <option value="Science">Science</option>
+        <option value="History">History</option>
+        <option value="Literature">Literature</option>
+    </select></span> <br><br>
+  <span>Descreption <textarea id = "Desc_Add" placeholder="Write a breif descreption"></textarea> </span><br><br>
+  <button type="submit" onclick="addBook(document.getElementById('ID_Add').value,document.getElementById('Title_Add').value,document.getElementById('Author_Add').value,document.getElementById('Sel_Cate').value,document.getElementById('Desc_Add').value)" class="add_btn">Add Book ➕</button>
+
+</div>
+<script src="Script.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+   background: linear-gradient(rgba(0, 0, 0, 0.236), rgba(0, 0, 0, 0.6)),url(adminwallpaper.png);
+   background-repeat: no-repeat ;
+   background-size: cover;
+   background-attachment: fixed;
+
+}
+nav {
+    height: 60px;
+    background-color: black; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+nav button {
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 8px 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ;
+    margin-right: 6px;
+}
+
+nav button:hover {
+    transform: scale(1.1);
+    border: 2px solid black;
+    background-color: orange;
+}
+
+nav button a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+nav p {
+    margin: 0;
+    display: flex;
+    align-items: left;
+    gap: 1px;
+}
+table {
+  background: #1e1a12;
+  border-collapse: collapse;
+  border-radius: 10px;
+  width: 100%;
+}
+
+th {
+  background: #1e1a12;
+  color: #c9a84c;       
+  border: 1px solid #7a6030; 
+  padding: 12px 16px;
+  
+}
+
+td {
+    background: #1e1a12;
+    color: #d4c5a0;        
+    border: 1px solid #4a3c20;
+    padding: 11px 16px;
+  
+}
+
+
+.wrap {
+  background: #2a2318;  
+  border-radius: 12px;
+  padding: 24px;
+}
+.searchcontainer{
+    display: flex;
+    align-items: center;
+    background: rgba(40, 40, 40, 0.6); 
+    backdrop-filter: blur(10px);        
+    border: 1.5px solid rgba(180, 150, 100, 0.4); 
+    border-radius: 50px;               
+    padding: 5px 20px;
+    width: 100%;
+    max-width: 800px;
+}
+.searchcontainer input {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 12px;
+    flex: 1;                          
+    outline: none;
+    font-size: 16px;
+}
+.categorydropdown {
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    color: #d4af37;                    
+    padding-left: 15px;
+    cursor: pointer;
+    outline: none;
+}
+.statusdropdown {
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    color: #d4af37;                    
+    padding-left: 15px;
+    cursor: pointer;
+    outline: none;
+}
+.shadow{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.btn {
+    margin-top: 10px;
+    background-color: rgb(0, 35, 116);
+    padding: 12px 28px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    border: transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: rgb(154, 184, 210);
+    color: #222;
+    transform: scale(1.05);
+    border: transparent;
+    border-radius: 10px;
+}

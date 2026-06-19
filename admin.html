@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminlogin.css">
+    <title>admin-login</title>
+</head>
+<body> 
+
+<br>
+
+<div class="container">
+
+<form id="loginForm">
+
+<div class="form-group">
+<label>Admin Email : </label>
+ <input type="email" size="10" maxlength="40" name="email" required placeholder="Enter email" re>
+</div>
+
+<div class="form-group">
+<label>Admin Password : </label> 
+<input type="password" size="10" maxlength="40" name="password"  minlength="8" required placeholder="Enter password">
+</div>
+
+
+<button type="submit" class="button-login">
+           ➜] Log in
+</button>
+
+
+        <p>  Login as a user? 
+            <button type="button" class="button-user">
+                <a href="login.html">👤 User</a>
+            </button>
+        </p>  
+
+</form>
+
+</div>
+<script src="auth.js"></script>
+
+</body>
+</html>

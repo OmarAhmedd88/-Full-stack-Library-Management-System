@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Edit BOOK</title>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="edit.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+                  
+ <nav>
+<button><a href="home_admin.html">🏠 Home</a></button>
+<button><a href="admin_dash.html">📋 Dashboard</a></button> 
+    <button><a href="add_book.html">➕ Add book</a> </button>
+    <button><a href="edit_book.html">✍️ Edit book</a> </button>
+<button><a href="delete_book.html">🗑️ Delete Book</a></button>
+<p align = "right"><button><a href="admin.html" > ➤ Logout</a></button>
+<button><a href="login.html" > 👤 user </a>
+
+</button>
+</p>
+</nav>
+
+
+    
+    <h1>Edit Book</h1>
+  
+    <p>Update Book Details</p> <br>
+    <div class="container_edit" >
+  <span>Book ID <input type="text" placeholder="e.g B006" id="id_edit"></span>  <br><br>
+  <span>Book Name <input type="text" placeholder="Enter book name" id="name_edit"></span>  <br><br>
+  <span>Author <input type="text" placeholder="Enter author name" id="author_edit"></span>  <br><br>
+  <span>Category  <select name="category" required id="category_edit">
+        <option value="">Select Category</option>
+        <option value="Programming">Programming</option>
+        <option value="Science">Science</option>
+        <option value="History">History</option>
+        <option value="Literature">Literature</option>
+    </select></span> <br><br>
+  <span>Descreption <textarea placeholder="Write a breif descreption" id="descreption_edit"></textarea> </span><br><br>
+  <button type="submit" class="add_btn" onclick="editBook(document.getElementById('id_edit').value,document.getElementById('name_edit').value,document.getElementById('author_edit').value,document.getElementById('category_edit').value,document.getElementById('descreption_edit').value)">Save changes 🗃️</button>
+
+</div>
+<script src="Script.js"></script>   
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
